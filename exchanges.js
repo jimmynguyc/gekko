@@ -332,6 +332,21 @@ var exchanges = [
     requires: ['key', 'secret', 'username'],
     providesHistory: false
   },
+  {
+    name: 'BitX',
+    slug: 'bitx',
+    direct: false,
+    infinityOrder: false,
+    currencies: ['MYR'],
+    assets: ['BTC'],
+    markets: [
+      {
+        pair: ['MYR', 'BTC'], minimalOrder: { amount: 0.01, unit: 'asset' }
+      }
+    ],
+    requires: ['key', 'secret'],
+    providesHistory: false
+  },
 ];
 
 module.exports = exchanges;
