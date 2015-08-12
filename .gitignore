@@ -33,6 +33,9 @@ dwsync.xml
 *.esproj
 *.espressostorage
 
+# Config file
+config.js
+
 # Folders to ignore
 
 node_modules

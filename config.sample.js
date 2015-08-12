@@ -1,4 +1,4 @@
-﻿// Everything is explained here:
+// Everything is explained here:
 // https://github.com/askmike/gekko/blob/master/docs/Configuring_gekko.md
 
 var config = {};
@@ -22,7 +22,7 @@ config.debug = true; // for additional logging / debugging
 // Monitor the live market
 config.watch = {
   enabled: true,
-  exchange: 'bitstamp', // @link https://github.com/askmike/gekko#supported-exchanges 
+  exchange: 'bitstamp', // @link https://github.com/askmike/gekko#supported-exchanges
   key: '',
   secret: '',
   currency: 'USD',
@@ -165,7 +165,7 @@ config.mailer = {
   tag: '[GEKKO] ',      // Prefix all email subject lines with this
 
             //       ADVANCED MAIL SETTINGS
-            // you can leave those as is if you 
+            // you can leave those as is if you
             // just want to use Gmail
 
   server: 'smtp.gmail.com',   // The name of YOUR outbound (SMTP) mail server.
@@ -257,16 +257,16 @@ config.backtest = {
   enabled: false
 }
 
-// set this to true if you understand that Gekko will 
+// set this to true if you understand that Gekko will
 // invest according to how you configured the indicators.
 // None of the advice in the output is Gekko telling you
-// to take a certain position. Instead it is the result 
+// to take a certain position. Instead it is the result
 // of running the indicators you configured automatically.
-// 
+//
 // In other words: Gekko automates your trading strategies,
 // it doesn't advice on itself, only set to true if you truly
 // understand this.
-// 
+//
 // Not sure? Read this first: https://github.com/askmike/gekko/issues/201
 config['I understand that Gekko only automates MY OWN trading strategies'] = false;
 

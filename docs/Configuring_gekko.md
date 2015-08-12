@@ -2,11 +2,17 @@
 
 *(Note that backtesting is not discussed as it is not implemented yet)*.
 
-Configuring Gekko consists of three parts: 
+Configuring Gekko consists of three parts:
 
 - [Watching a realtime market](#watching-a-realtime-market)
 - [Automate trading advice](#automate-trading-advice)
 - [Enabling plugins](#enabling-plugins)
+
+## Create config.js from config.sample.js
+
+Rename config.sample.js to config.js and tweak its contents according to the instructions below.
+
+*(Note that config.js contains API keys and secrets and should not be commited to version control)*
 
 ## Watching a realtime market
 
@@ -52,7 +58,7 @@ Open up the config.js file inside the Gekko directory with a text editor and sea
   currencies: USD  
   assets: BTC  
   markets: USD/BTC
-  
+
 * CEX.io:  
   currencies: BTC  
   assets: GHS  
@@ -216,7 +222,7 @@ When you turn on a plugin for the first time it might be that you need to instal
 
 ### Trader
 
-This plugin automatically creates orders based on the advice on the market it is watching. This turns Gekko into an automated trading bot. 
+This plugin automatically creates orders based on the advice on the market it is watching. This turns Gekko into an automated trading bot.
 
 Before Gekko can automatically trade you need to create API keys so that Gekko has the rights to create orders on your behalf, the rights Gekko needs are (naming differs per exchange): get info, get balance/portfolio, get open orders, get fee, buy, sell and cancel order. For all exchanges you need the API key and the API secret, for both Bitstamp and CEX.io you also need your username (which is a number at Bitstamp).
 
@@ -397,7 +403,7 @@ This is an advanced plugin only for programmers! If you are interested in this r
         // the name of the event, set
         // an optional prefix to the
         // channel name.
-      channelPrefix: '', 
+      channelPrefix: '',
       broadcast: [
         'small candle'
       ]
